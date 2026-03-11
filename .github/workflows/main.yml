@@ -23,15 +23,16 @@ jobs:
           bash build.sh venc-hisi
           mv venc/venc venc/venc-hisi
 
-      - name: Build sample
-        run: |
-          sudo apt-get update
-          sudo apt-get install musl-dev
-          x86_64-linux-musl-gcc sample/vdec-sample.c -o vdec-sample -s -static
-
       - name: Build osd
         run: |
           bash build.sh osd
+
+      - name: Build star
+        run: |
+          bash build.sh star-c
+          mv star/star star/star-c
+          bash build.sh star-e
+          mv star/star star/star-e
 
       - name: Upload binaries
         if: github.event_name != 'pull_request'
@@ -39,11 +40,12 @@ jobs:
         with:
           tag_name: latest
           files: |
-            vdec-sample
             vdec/vdec
             venc/venc-goke
             venc/venc-hisi
             osd/build/osd
+            star/star-c
+            star/star-e
 
       - name: Send binaries
         if: github.event_name != 'pull_request'
@@ -57,3 +59,5 @@ jobs:
           curl ${CMD} -F caption="$(echo -e ${TGM})" -F document=@venc/venc-goke
           curl ${CMD} -F caption="$(echo -e ${TGM})" -F document=@venc/venc-hisi
           curl ${CMD} -F caption="$(echo -e ${TGM})" -F document=@osd/build/osd
+          curl ${CMD} -F caption="$(echo -e ${TGM})" -F document=@star/star-c
+          curl ${CMD} -F caption="$(echo -e ${TGM})" -F document=@star/star-e

@@ -1,6 +1,7 @@
 osd/build
 firmware
 toolchain
+star/star
 vdec/vdec
 venc/venc
 .vscode/tasks.json

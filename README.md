@@ -1,14 +1,16 @@
 ![OpenIPC logo][logo]
 
 ## Simple FPV
-[![Telegram](https://openipc.org/images/telegram_button.svg)][telegram_fpv]
+[![Telegram](https://openipc.org/images/telegram_button.svg)][fpv]
 
 [logo]: https://openipc.org/assets/openipc-logo-black.svg
-[telegram_fpv]: https://t.me/+BMyMoolVOpkzNWUy
+[fpv]: https://t.me/+BMyMoolVOpkzNWUy
 
-## Encoder
+## STAR
+Star is a simple streamer for the Sigmastar infinity6b0, infinity6c and infinity6e platform.
 
-Here is an example of getting video from a GK7205V300 board using only HiMPP low level API.
+## VENC
+Venc is an example of getting video from a GK7205V300 board using only HiMPP low level API.
 
 This example is configured and tested on an IP camera using IMX335 image sensor. 
 If your module has another sensor, you need to adjust board configuration profile in the source code. 
@@ -22,6 +24,8 @@ The NAL defragmentation algorithm is described in **vdec-sample.c**.
 ## How to build
 Build script usage:
 ```bash
+./build.sh star-c
+./build.sh star-e
 ./build.sh venc-goke
 ./build.sh venc-hisi
 ./build.sh vdec
@@ -39,7 +43,6 @@ killall majestic
 ```
 
 ## Extra OSD
-
 | Element   | Description       |
 |-----------|-------------------|
 | osd_ele1  | # ALT            |
@@ -61,8 +64,6 @@ killall majestic
 | osd_ele17 | # TIME           |
 | osd_ele18 | # HOR            |
 | osd_ele19 | # TEMP           |
-
-
 
 ### Links
 * https://github.com/svpcom/wfb-ng-osd
