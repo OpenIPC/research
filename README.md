@@ -10,7 +10,7 @@
 Star is a simple streamer for the Sigmastar infinity6b0, infinity6c and infinity6e platform.
 
 ## VENC
-Venc is an example of getting video from a GK7205V300 board using only HiMPP low level API.
+Venc is an example of getting video from a Goke/HiSi board using only HiMPP low level API.
 
 This example is configured and tested on an IP camera using IMX335 image sensor. 
 If your module has another sensor, you need to adjust board configuration profile in the source code. 
@@ -20,6 +20,9 @@ Video output format is H.264 over UDP with NAL fragmentation like in RTP, althou
 Keep in mind that this is not a valid RTP stream! 
 To receive and display video stream extra coding is needed. 
 The NAL defragmentation algorithm is described in **vdec-sample.c**.
+
+## Download release
+You can download the precompiled files [here](https://github.com/OpenIPC/research/releases/tag/latest)
 
 ## How to build
 Build script usage:
