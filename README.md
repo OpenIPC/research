@@ -4,7 +4,7 @@
 [![Telegram](https://openipc.org/images/telegram_button.svg)][fpv]
 
 [logo]: https://openipc.org/assets/openipc-logo-black.svg
-[fpv]: https://t.me/+BMyMoolVOpkzNWUy
+[fpv]: https://openipc.org/our-channels
 
 ## STAR
 Star is a simple streamer for the Sigmastar infinity6b0, infinity6c and infinity6e platform.
