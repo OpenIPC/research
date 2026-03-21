@@ -1,3 +1,9 @@
+#
+# Copyright (c) OpenIPC  https://openipc.org  MIT License
+#
+# Makefile — build rules for the star RTP streamer (SigmaStar)
+#
+
 LIB = -lmi_isp -lmi_sensor -lmi_sys -lmi_venc -lmi_vif -lcus3a -lispalgo -lcam_os_wrapper
 
 star-b:

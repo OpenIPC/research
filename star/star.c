@@ -1,8 +1,9 @@
 /*
- * Part of the OpenIPC project — https://openipc.org
- * Targets: IP cameras and embedded Linux (POSIX, uClibc/musl/glibc)
- * Contact: tech@openipc.eu
- * License: MIT
+ *
+ * Copyright (c) OpenIPC  https://openipc.org  MIT License
+ *
+ * star.c — RTP video streamer for SigmaStar IP cameras
+ *
  */
 
 #include "star.h"

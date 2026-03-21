@@ -1,8 +1,9 @@
 /*
- * Part of the OpenIPC project — https://openipc.org
- * Targets: IP cameras and embedded Linux (POSIX, uClibc/musl/glibc)
- * Contact: tech@openipc.eu
- * License: MIT
+ *
+ * Copyright (c) OpenIPC  https://openipc.org  MIT License
+ *
+ * star.h — types and definitions for the star RTP streamer
+ *
  */
 
 #include <errno.h>
